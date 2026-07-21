@@ -37,7 +37,7 @@ The Moon Door story renders shown in the video are in
 
 ## 0:10–0:18 — Empty six-panel editor
 
-> With Codex and GPT-5.6, that fable is suddenly real — and the only limit
+> With Codex and GPT-5.6, that wonder is suddenly real — and the only limit
 > left is imagination itself.
 
 ## 0:18–0:30 — "Mara waits." → all-pencil sketch
@@ -83,19 +83,18 @@ The Moon Door story renders shown in the video are in
 
 ## 1:52–2:14 — Built with Codex, running on GPT-5.6
 
-> GPT-5.6 isn't just how we built Maliang — it's the engine inside it.
-> Safety, scene extraction with source-span evidence, and render inspection
-> run GPT-5.6 Terra through sandboxed, ephemeral Codex subprocesses, while
+> GPT-5.6 isn't just how I built Maliang — it's the engine inside it.
+> Safety, scene extraction, and render inspection
+> run GPT-5.6 Terra through sandbox, while
 > GPT-5.6 Sol orchestrates image generation against a deterministic render
-> contract. We built the core in Codex CLI, steered long runs from Codex
-> Mobile while commuting, and used Sol's ultra mode with subagents to review
-> every major design.
+> contract. I built the core in Codex app, steered long runs from Codex
+> Mobile while I commuting, and used Sol's ultra mode with subagents to review
+> every major design and let it run tests overnight.
 
 ## 2:14–2:26 — Renderer benchmark board
 
-> Codex also ran our renderer bake-off — raster image model, constrained
-> vector plans, and the direct Images API, benchmarked head to head. The
-> data picked the shipped default.
+> Codex also ran our renderer benchmark during the design phase for me — gpt image model through codex, constrained
+> vector plans, and the direct Images API, benchmarked head to head. It provided the data for me to make decisions
 
 ## 2:26–2:38 — Closing card
 

@@ -3,7 +3,7 @@
 - **Track:** Education
 - **Repository:** https://github.com/hyspacex/maliang (public, MIT)
 - **Codex `/feedback` Session ID:** `019f6ec7-3fc0-78b2-aa28-88e033d3e9d7`
-- **Demo video:** _(YouTube link — added at submission time)_
+- **Demo video:** https://youtu.be/fKPEeqB7PoQ
 - **Platform:** macOS desktop (Electron). A zero-cost browser judge path is
   documented in the README and in `DEMO.md`.
 
@@ -132,7 +132,7 @@ game mechanic — the magic pen only answers to the words you actually wrote.
 | Project name | Maliang |
 | Elevator pitch | Your words are the magic pen — a comic studio where stories come to life only through your own written words. |
 | Track / category | Education |
-| Video URL | _(public YouTube link)_ |
+| Video URL | https://youtu.be/fKPEeqB7PoQ |
 | Repo URL | https://github.com/hyspacex/maliang |
 | Codex `/feedback` Session ID | `019f6ec7-3fc0-78b2-aa28-88e033d3e9d7` |
 | Built with | codex, gpt-5.6-terra, gpt-5.6-sol, gpt-image-2, electron, typescript, react, vite, zod, node.js, swift |
