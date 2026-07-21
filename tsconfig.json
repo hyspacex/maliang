@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "useDefineForClassFields": true,
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "types": ["node", "vitest/globals", "@testing-library/jest-dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@maliang/domain": ["packages/domain/src/index.ts"],
+      "@maliang/scene-schema": ["packages/scene-schema/src/index.ts"],
+      "@maliang/scene-validator": ["packages/scene-validator/src/index.ts"],
+      "@maliang/render-compiler": ["packages/render-compiler/src/index.ts"],
+      "@maliang/design-system": ["packages/design-system/src/index.ts"],
+      "@maliang/coaching-catalog": ["packages/coaching-catalog/src/index.ts"],
+      "@maliang/craft-cards": ["packages/craft-cards/src/index.ts"],
+      "@maliang/craft-cards/catalog": ["packages/craft-cards/src/catalog.ts"],
+      "@maliang/local-store": ["packages/local-store/src/index.ts"],
+      "@maliang/codex-gateway": ["packages/codex-gateway/src/index.ts"],
+      "@maliang/image-compositor": ["packages/image-compositor/src/index.ts"],
+      "@maliang/vector-renderer": ["packages/vector-renderer/src/index.ts"],
+      "@maliang/test-fixtures": ["packages/test-fixtures/src/index.ts"]
+    }
+  },
+  "include": [
+    "apps/**/*.ts",
+    "apps/**/*.tsx",
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "scripts/**/*.ts",
+    "tests/**/*.ts",
+    "vitest.config.ts"
+  ]
+}

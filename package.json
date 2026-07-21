@@ -1,0 +1,57 @@
+{
+  "name": "maliang",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/desktop/main.mjs",
+  "description": "A local-first, evidence-bound comic-making prototype.",
+  "scripts": {
+    "build": "npm run typecheck && npm run build:renderer && npm run build:desktop",
+    "build:desktop": "node scripts/build-desktop.mjs",
+    "build:renderer": "vite build --config apps/desktop/vite.config.ts",
+    "build:speech": "swift build --package-path native/speech-helper -c release",
+    "check:codex": "tsx scripts/verify-codex-capability.ts",
+    "dev": "vite --config apps/desktop/vite.config.ts",
+    "dev:desktop": "npm run build:desktop && concurrently -k \"vite --config apps/desktop/vite.config.ts\" \"wait-on http://127.0.0.1:5173 && electron .\"",
+    "generate:schemas": "tsx scripts/generate-schemas.ts",
+    "ratings:prepare": "tsx scripts/prepare-rating-session.ts",
+    "benchmark": "tsx scripts/run-render-benchmark.ts --provider=fake",
+    "benchmark:live": "tsx scripts/run-render-benchmark.ts --provider=codex",
+    "benchmark:vector": "tsx scripts/run-render-benchmark.ts --provider=fake --renderer=vector",
+    "benchmark:vector:live": "tsx scripts/run-render-benchmark.ts --provider=codex --renderer=vector",
+    "benchmark:openai:live": "tsx scripts/run-render-benchmark.ts --provider=codex --renderer=openai-api",
+    "benchmark:product": "tsx scripts/run-product-comparison.ts",
+    "start": "electron .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run test && npm run build"
+  },
+  "dependencies": {
+    "@fontsource/bangers": "5.2.6",
+    "@fontsource/patrick-hand": "5.2.6",
+    "electron": "43.1.1",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "zod": "4.0.17"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "6.6.4",
+    "@testing-library/react": "16.3.0",
+    "@types/node": "22.17.2",
+    "@types/react": "19.1.10",
+    "@types/react-dom": "19.1.7",
+    "@vitejs/plugin-react": "4.7.0",
+    "concurrently": "9.2.0",
+    "esbuild": "0.25.12",
+    "jsdom": "26.1.0",
+    "tsx": "4.20.4",
+    "typescript": "5.9.2",
+    "vite": "7.3.6",
+    "vitest": "3.2.7",
+    "wait-on": "8.0.4"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://maliang.local/schemas/render-contract.v1.json",
+  "title": "Maliang Render Contract v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contractVersion",
+    "compilerVersion",
+    "sourceHash",
+    "styleVersion",
+    "modelPolicyVersion",
+    "explicitFacts",
+    "pencilSlots",
+    "absentObjects",
+    "prohibitedAdditions",
+    "characterReferenceVersions",
+    "clutterPressure",
+    "dialogueOverlay"
+  ],
+  "properties": {
+    "contractVersion": {
+      "const": 1
+    },
+    "compilerVersion": {
+      "type": "string"
+    },
+    "sourceHash": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "styleVersion": {
+      "type": "string"
+    },
+    "modelPolicyVersion": {
+      "type": "string"
+    },
+    "explicitFacts": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "factId",
+          "entityId",
+          "category",
+          "slot",
+          "value",
+          "evidence"
+        ],
+        "properties": {
+          "factId": {
+            "type": "string"
+          },
+          "entityId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "category": {
+            "enum": [
+              "presence",
+              "identity",
+              "state",
+              "action",
+              "setting",
+              "composition"
+            ]
+          },
+          "slot": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "start",
+              "end",
+              "text"
+            ],
+            "properties": {
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pencilSlots": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "entityId",
+          "slot",
+          "treatment",
+          "reason"
+        ],
+        "properties": {
+          "entityId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "slot": {
+            "type": "string"
+          },
+          "treatment": {
+            "enum": [
+              "gray_pencil",
+              "blank_paper"
+            ]
+          },
+          "reason": {
+            "enum": [
+              "present_but_unspecified",
+              "setting_unspecified"
+            ]
+          }
+        }
+      }
+    },
+    "absentObjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prohibitedAdditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "characterReferenceVersions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "clutterPressure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "score",
+        "threshold",
+        "active",
+        "contributors"
+      ],
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0
+        },
+        "threshold": {
+          "type": "number",
+          "minimum": 0
+        },
+        "active": {
+          "type": "boolean"
+        },
+        "contributors": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "attributes",
+            "objects",
+            "spatialConstraints",
+            "repeatedModifiers",
+            "actions",
+            "dialogueArea"
+          ],
+          "properties": {
+            "attributes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "objects": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "spatialConstraints": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "repeatedModifiers": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "actions": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "dialogueArea": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    },
+    "dialogueOverlay": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "speakerId",
+          "exactText",
+          "source"
+        ],
+        "properties": {
+          "speakerId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "exactText": {
+            "type": "string"
+          },
+          "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "start",
+              "end",
+              "text"
+            ],
+            "properties": {
+              "start": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

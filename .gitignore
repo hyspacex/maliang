@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+coverage/
+.DS_Store
+*.log
+.maliang-data/
+benchmarks/runs/
+benchmarks/ratings/private/
+apps/desktop/renderer/test-results/
+.playwright-cli/
+native/speech-helper/.build/
+benchmarks/ratings/session/
