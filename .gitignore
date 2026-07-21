@@ -13,3 +13,4 @@ apps/desktop/renderer/test-results/
 .playwright-cli/
 native/speech-helper/.build/
 benchmarks/ratings/session/
+.gstack/

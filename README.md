@@ -5,6 +5,26 @@ only by changing their own words. Every renderable detail is bound to an exact
 source span, unspecified details remain provisional, and exact dialogue is
 composed locally.
 
+## OpenAI Build Week — judge quick start
+
+Maliang was built with Codex and runs on GPT-5.6 at its core: `gpt-5.6-terra`
+for structured safety/extraction/inspection jobs and `gpt-5.6-sol` for
+image-generation orchestration, both invoked through sandboxed ephemeral
+Codex CLI subprocesses. See `SUBMISSION.md` for the full Codex/GPT-5.6 usage
+story and `DEMO.md` for a timestamped demo walkthrough.
+
+Zero-cost judge path (no credentials, no model spend, any platform with
+Node 22.5+):
+
+```bash
+npm install
+npm test        # 70 tests across 15 files
+npm run dev     # full UI at http://127.0.0.1:5173 with the deterministic fake provider
+```
+
+Full live path (macOS): sign in to Codex CLI, put `OPENAI_API_KEY` in an
+ignored `.env`, then `npm run build && npm run start`.
+
 ## Development
 
 Requirements:
