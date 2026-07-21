@@ -42,45 +42,44 @@ The Moon Door story renders shown in the video are in
 
 ## 0:18–0:30 — "Mara waits." → all-pencil sketch
 
-> A child writes: "Mara waits." Maliang draws exactly that — and nothing
-> more. Everything the words don't say stays honest, provisional pencil.
+> You write: "Mara waits." Maliang draws exactly that — and nothing more.
+> Everything your words don't say stays honest, provisional pencil.
 
 ## 0:30–0:44 — Revision: the cave and lantern appear, Mara stays blank
 
-> The child revises: "Mara waits in the dark cave, holding her little
-> lantern." The cave appears. The lantern appears. But Mara is still a blank
-> outline — because the child never said what she looks like.
+> You revise: "Mara waits in the dark cave, holding her little lantern."
+> The cave appears. The lantern appears. But Mara is still a blank outline —
+> because you never said what she looks like.
 
 ## 0:44–0:56 — "A small girl with a messy ponytail" → Mara becomes real
 
 > One more revision — "a small girl with a messy ponytail" — and Mara
-> becomes real. Every detail on the page is earned by the exact words the
-> child wrote.
+> becomes real. Every detail on the page is earned by the exact words you
+> wrote.
 
-## 0:56–1:12 — The writing helper: one question, child's consent
+## 0:56–1:12 — The writing helper: one question, your consent
 
 > When a picture comes out pencil-heavy, Maliang can ask one reviewed
-> question — with the child's consent. It never inserts words, never offers
-> replacements, never scores, and never blocks finishing. The child always
-> decides: keep it, or revise it.
+> question — with your consent. It never inserts words, never offers
+> replacements, never scores, and never blocks finishing. It's built strictly
+> enough for young writers, which means every writer stays the only author.
 
 ## 1:12–1:24 — Craft cards deck
 
 > Revision earns craft cards — real author tricks like "show, don't tell"
-> and "strong verbs" — unlocked only by evidence that the child's own
-> rewrite fixed the picture.
+> and "strong verbs" — unlocked only by evidence that your own rewrite
+> fixed the picture.
 
 ## 1:24–1:36 — The full story written in the editor
 
-> So the child keeps writing. Six panels, one story — The Moon Door —
-> every sentence in the child's own voice, every panel earned.
+> So you keep writing. Six panels, one story — The Moon Door — every
+> sentence in your own voice, every panel earned.
 
 ## 1:36–1:52 — Pan down the finished comic page
 
 > And this is what revision buys you: a finished comic where every single
 > detail — the moon door, the lantern, the ponytail, the night sky — exists
-> because a child chose the words for it. That's writing training
-> imagination.
+> because you chose the words for it. That's writing training imagination.
 
 ## 1:52–2:14 — Built with Codex, running on GPT-5.6
 
