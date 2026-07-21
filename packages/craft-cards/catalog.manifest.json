@@ -1,0 +1,7 @@
+{
+  "catalogVersion": "1.0.0",
+  "curriculumReviewStatus": "review-required-before-playtest",
+  "source": "src/catalog.ts",
+  "sha256": "75f3794f231fc06af07b471abf3461529009ace194697bae861f2a7f8b65b7c6",
+  "integrityBoundary": "Included in the signed and notarized Maliang application bundle."
+}
