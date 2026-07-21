@@ -23,18 +23,21 @@ Production note: never show image generation in real time. Jump-cut from the
 committed sentence directly to the finished redraw (the fake provider is
 instant; for live-render footage, cut the wait and keep the reveal).
 
-## 0:00–0:16 — The problem
+## 0:00–0:30 — The magic pen is real now
 
 Narration:
 
-> Ma Liang is the boy from the Chinese legend whose paintings came true.
-> AI image tools hand every kid that magic brush — but they teach the wrong
-> lesson: mumble anything, get a masterpiece. Maliang flips it. Here, the
-> picture only changes when your words change.
+> Ma Liang is the boy from an ancient Chinese story. He has a magic pen:
+> whatever he draws comes to life. For generations that was a fable. With
+> Codex and GPT-5.6, it's literally true — AI can bring a child's
+> imagination to life, and the only limit left is imagination itself. But
+> image tools teach kids the wrong lesson: mumble anything, get a
+> masterpiece. Maliang flips it. Here, the picture only changes when your
+> words change — because writing is the skill that trains imagination.
 
-Show: title card, then the empty six-panel story editor (0:16–0:25).
+Show: title card, then the empty six-panel story editor (0:30–0:39).
 
-## 0:25–1:01 — Words become pictures, honestly
+## 0:39–1:15 — Words become pictures, honestly
 
 Narration:
 
@@ -49,7 +52,7 @@ Narration:
 Show: the three revision beats in panel 1 — all-pencil placeholder, the
 faceless cave render, then the fully drawn Mara.
 
-## 1:01–1:19 — The writing helper coaches, never writes
+## 1:15–1:33 — The writing helper coaches, never writes
 
 Narration:
 
@@ -61,7 +64,7 @@ Narration:
 Show: the "ONE QUESTION — YOUR IDEAS" helper panel with KEEP MY WORDS /
 ANOTHER PART choices.
 
-## 1:19–2:04 — Built with Codex and GPT-5.6, running on Codex and GPT-5.6
+## 1:33–2:19 — Built with Codex and GPT-5.6, running on Codex and GPT-5.6
 
 Narration:
 
@@ -79,7 +82,7 @@ Narration:
 Show: the `codex exec` invocations for both models; the three-renderer
 benchmark board (`output/playwright/comparison/raster-vs-vector-vs-openai-api.png`).
 
-## 2:04–2:17 — Why it matters
+## 2:19–2:32 — Why it matters
 
 Narration:
 
