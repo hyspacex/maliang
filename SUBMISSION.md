@@ -11,8 +11,9 @@
 
 ## Tagline
 
-The picture only changes when the child's words change. Maliang turns writing
-revision — the part of writing kids resist most — into the reward itself.
+Your words are the magic pen. Maliang turns writing revision — the part of
+writing kids resist most — into the reward itself: better words, better
+picture.
 
 ## Inspiration — why "Maliang"
 
@@ -121,13 +122,15 @@ game mechanic — the magic pen only answers to the words you actually wrote.
 - Ship the speech bridge ("Something's wrong? Say it!") for pre-writers.
 - Classroom pilot: teacher-facing craft-card progress views.
 - Close the ≤5 s render gate with a persistent app-server Codex session.
+- The invitation isn't only for kids: the same evidence-bound write-see-revise
+  loop works for anyone learning to express an idea clearly.
 
 ## What to enter in the Devpost form
 
 | Field | Value |
 | --- | --- |
 | Project name | Maliang |
-| Elevator pitch | The picture only changes when the child's words change — a comic studio that makes writing revision the reward. |
+| Elevator pitch | Your words are the magic pen — a comic studio where stories come to life only through your own written words. |
 | Track / category | Education |
 | Video URL | _(public YouTube link)_ |
 | Repo URL | https://github.com/hyspacex/maliang |

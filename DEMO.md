@@ -38,7 +38,7 @@ The Moon Door story renders shown in the video are in
 ## 0:10–0:18 — Empty six-panel editor
 
 > With Codex and GPT-5.6, that fable is suddenly real — and the only limit
-> left is a child's imagination.
+> left is imagination itself.
 
 ## 0:18–0:30 — "Mara waits." → all-pencil sketch
 
@@ -100,6 +100,5 @@ The Moon Door story renders shown in the video are in
 
 ## 2:26–2:38 — Closing card
 
-> Writing is the skill that trains imagination — and imagination is the only
-> limit left. Maliang: you already hold the magic pen. Your words are the
-> brush.
+> Writing trains imagination — at seven, and at seventy. Maliang begins with
+> kids, but the invitation is for everyone: your words are the magic pen.
