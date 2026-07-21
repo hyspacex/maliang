@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Maliang blinded renderer ratings</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">MALIANG · SYNTHETIC BENCHMARK</p>
+        <h1>Blinded renderer ratings</h1>
+        <p id="progress">Loading candidates…</p>
+      </header>
+      <section id="rating-card" hidden>
+        <h2 id="candidate-id"></h2>
+        <img id="candidate-image" alt="Synthetic comic-panel candidate" />
+        <form id="rating-form">
+          <label>
+            Explicit detail coverage
+            <select name="explicitDetailCoverage" required>
+              <option value="">Choose…</option>
+              <option value="0">0 · none</option>
+              <option value="1">1 · weak</option>
+              <option value="2">2 · mixed</option>
+              <option value="3">3 · strong</option>
+              <option value="4">4 · complete</option>
+            </select>
+          </label>
+          <label>
+            Unsupported concrete detail
+            <select name="unsupportedConcreteness" required>
+              <option value="">Choose…</option>
+              <option value="0">0 · none</option>
+              <option value="1">1 · minor</option>
+              <option value="2">2 · noticeable</option>
+              <option value="3">3 · major</option>
+              <option value="4">4 · dominates</option>
+            </select>
+          </label>
+          <label>
+            Pencil-slot compliance
+            <select name="pencilCompliance" required>
+              <option value="">Choose…</option>
+              <option value="0">0 · none</option>
+              <option value="1">1 · weak</option>
+              <option value="2">2 · mixed</option>
+              <option value="3">3 · strong</option>
+              <option value="4">4 · complete</option>
+            </select>
+          </label>
+          <label>
+            Notes (no names or child data)
+            <textarea name="notes" maxlength="500" rows="3"></textarea>
+          </label>
+          <button type="submit">SAVE &amp; NEXT</button>
+        </form>
+      </section>
+      <section id="complete" hidden>
+        <h2>Rating set complete</h2>
+        <p>Download the redacted ratings JSON and place it with the run report.</p>
+        <button id="download" type="button">DOWNLOAD RATINGS</button>
+      </section>
+      <p id="error" role="alert"></p>
+    </main>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

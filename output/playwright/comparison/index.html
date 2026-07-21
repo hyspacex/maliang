@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maliang renderer comparison</title>
+    <style>
+      @font-face {
+        font-family: system;
+        src: local("Arial");
+      }
+      :root {
+        color: #1c1c2e;
+        background: #eee8d7;
+        font-family: system, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 30px; }
+      main {
+        max-width: 1900px;
+        margin: auto;
+        background: #fffaf0;
+        border: 5px solid #1c1c2e;
+        box-shadow: 12px 12px 0 #1c1c2e;
+        padding: 26px;
+      }
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 20px;
+        align-items: end;
+        border-bottom: 5px solid #1c1c2e;
+        padding-bottom: 18px;
+        margin-bottom: 24px;
+      }
+      .eyebrow {
+        margin: 0 0 4px;
+        font-weight: 900;
+        letter-spacing: .1em;
+        color: #ef476f;
+      }
+      h1 { margin: 0; font-size: 42px; line-height: 1; }
+      .prompt {
+        background: #ffd23f;
+        border: 3px solid #1c1c2e;
+        padding: 12px 16px;
+        font-size: 18px;
+        font-weight: 800;
+        transform: rotate(-1deg);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+      article {
+        border: 4px solid #1c1c2e;
+        background: white;
+        box-shadow: 7px 7px 0 #1c1c2e;
+        padding: 15px;
+      }
+      article.vector { border-color: #ef476f; }
+      article.api { border-color: #118ab2; }
+      .article-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+      h2 { margin: 0; font-size: 28px; }
+      .time {
+        border: 3px solid #1c1c2e;
+        padding: 8px 12px;
+        font-weight: 900;
+        font-size: 22px;
+        background: #f6f1e3;
+      }
+      .vector .time { background: #ffd23f; }
+      .api .time { background: #a8dadc; }
+      img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        display: block;
+        object-fit: cover;
+        border: 3px solid #1c1c2e;
+      }
+      ul { margin: 14px 0 2px; padding-left: 22px; font-size: 17px; }
+      li + li { margin-top: 5px; }
+      footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-top: 28px;
+      }
+      .metric {
+        border: 3px solid #1c1c2e;
+        padding: 14px;
+        background: #f6f1e3;
+        text-align: center;
+      }
+      .metric strong { display: block; font-size: 30px; }
+      .miss { color: #c92f54; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">MALIANG · PRODUCT-LEVEL SYNTHETIC BENCHMARK</p>
+          <h1>Three renderer paths</h1>
+        </div>
+        <div class="prompt">“Mara waits in the cave by lantern 1.”</div>
+      </header>
+      <section class="grid">
+        <article>
+          <div class="article-head">
+            <h2>Before · image model</h2>
+            <span class="time">160.51 s</span>
+          </div>
+          <img src="../before/product-setting-01-raster.png" alt="Raster graphite cave panel" />
+          <ul>
+            <li>High surface detail and atmospheric graphite rendering</li>
+            <li>One image-model generation after validated scene extraction</li>
+            <li>Exact dialogue would still be composed locally</li>
+          </ul>
+        </article>
+        <article class="vector">
+          <div class="article-head">
+            <h2>After · vector plan</h2>
+            <span class="time">57.82 s</span>
+          </div>
+          <img src="../after/product-setting-01-vector.png" alt="Vector cave panel" />
+          <ul>
+            <li>Schema-validated placement plan; trusted local SVG drawing</li>
+            <li>Zero image-model calls and deterministic fact-bound layers</li>
+            <li>Much simpler art kit; no atmospheric surface detail yet</li>
+          </ul>
+        </article>
+        <article class="api">
+          <div class="article-head">
+            <h2>Option 3 · OpenAI API</h2>
+            <span class="time">61.05 s</span>
+          </div>
+          <img src="../after/product-setting-01-openai-api.png" alt="Low-quality OpenAI API cave panel" />
+          <ul>
+            <li>Strongest child-character appeal in this one-prompt comparison</li>
+            <li>Direct image call: 12.76 s at low quality and 960×720</li>
+            <li>Invents unsupported appearance and cave detail instead of leaving it provisional</li>
+          </ul>
+        </article>
+      </section>
+      <footer>
+        <div class="metric"><strong>4.65×</strong>faster image stage vs. Codex image path</div>
+        <div class="metric"><strong>62.0%</strong>less end-to-end time vs. raster</div>
+        <div class="metric miss"><strong>61.05 s</strong>still misses the ≤5 s gate</div>
+      </footer>
+    </main>
+  </body>
+</html>

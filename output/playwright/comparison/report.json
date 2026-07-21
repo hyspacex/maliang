@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "syntheticOnly": true,
+  "prompt": "Mara waits in the cave by lantern 1.",
+  "raster": {
+    "runId": "product-raster-setting-01-2026-07-20T05-52-23-645Z-ea5017da",
+    "totalMs": 160512,
+    "state": "READY",
+    "screenshot": "../before/product-setting-01-raster.png"
+  },
+  "vector": {
+    "runId": "product-vector-setting-01-2026-07-20T06-03-49-471Z-687a2cda",
+    "totalMs": 57819,
+    "state": "READY",
+    "screenshot": "../after/product-setting-01-vector.png",
+    "imageModelCalls": 0
+  },
+  "openaiApi": {
+    "runId": "product-openai-api-setting-01-2026-07-21T05-39-44-533Z-c0dfb271",
+    "totalMs": 61049,
+    "state": "READY",
+    "screenshot": "../after/product-setting-01-openai-api.png",
+    "stageRunId": "run-2026-07-21T05-38-20-511Z-a55120a3",
+    "generationMs": 12764,
+    "model": "gpt-image-2",
+    "quality": "low",
+    "size": "960x720",
+    "outputFormat": "jpeg",
+    "outputCompression": 72
+  },
+  "comparison": {
+    "speedupRatio": 2.7761,
+    "wallTimeReduction": 0.6398,
+    "apiVsRasterSpeedupRatio": 2.6292,
+    "apiVsRasterWallTimeReduction": 0.6197,
+    "apiVsVectorSlowdown": 0.0559,
+    "apiGenerationVsCodexImageSpeedupRatio": 4.6505,
+    "apiGenerationVsCodexImageReduction": 0.785,
+    "fiveSecondGateMet": false
+  },
+  "reliabilityNote": {
+    "strictVectorExtractionFailuresBeforeAcceptedRun": 1,
+    "failedRunId": "product-vector-setting-01-2026-07-20T05-56-09-665Z-d48555fa",
+    "failedAfterMs": 37184,
+    "strictApiExtractionFailuresBeforeAcceptedRun": 1,
+    "failedApiRunId": "product-openai-api-setting-01-2026-07-21T05-39-01-100Z-c7a38b91",
+    "failedApiRunMs": 29315,
+    "failedApiRunImageModelCalls": 0
+  },
+  "qualityReview": {
+    "raster": "Atmospheric graphite with literal cave and lantern; intentionally provisional human identity.",
+    "vector": "Most deterministic and fact-bound, but visually sparse and much less expressive.",
+    "openaiApi": "Most immediately appealing character illustration in this specimen, with correct cave, waiting pose, and one lantern, but it invents unsupported hair, clothing, facial, and cave details instead of keeping those slots provisional."
+  },
+  "deterministicVectorCorpus": {
+    "runId": "run-2026-07-20T06-08-59-873Z-712bc8d6",
+    "fixtureCount": 120,
+    "schemaValidity": 1,
+    "renderedExplicitDetailCoverage": 1,
+    "pencilCompliance": 1,
+    "unsupportedConcretenessRate": 0
+  }
+}
