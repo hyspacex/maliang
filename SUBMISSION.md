@@ -14,17 +14,26 @@
 The picture only changes when the child's words change. Maliang turns writing
 revision — the part of writing kids resist most — into the reward itself.
 
-## Inspiration
+## Inspiration — why "Maliang"
 
-Maliang is named for the Chinese folk tale of Ma Liang and the Magic Brush: a
-boy whose paintings become real. Every child who has used an AI image tool has
-felt that magic — and learned exactly the wrong lesson: mumble anything, get a
-beautiful picture. The craft disappears.
+Maliang (马良) is the boy from the ancient Chinese story *Ma Liang and the
+Magic Brush*. He is given a magic pen: whatever he draws comes to life.
 
-Maliang inverts that. It is a comic-making studio where the *only* way to
-change the picture is to change your own words. Vague writing produces a
-provisional pencil sketch. Specific, revised writing gets inked and colored.
-Revision stops being homework and becomes the game mechanic.
+For generations that was a fable. With GenAI it is suddenly, literally true —
+Codex and GPT-5.6 can bring a child's imagination to life on the page. The
+only thing that limits a child now is the reach of their own imagination, so
+the most important thing we can do is let them dream and let them express
+themselves. And the skill that trains both — expression *and* imagination —
+is writing. We named the project Maliang to tell every kid: **you already
+hold the magic pen. Your words are the brush.**
+
+But there's a trap in the magic. Every child who has used an AI image tool
+has felt it — and learned exactly the wrong lesson: mumble anything, get a
+beautiful picture. The craft disappears. Maliang inverts that. It is a
+comic-making studio where the *only* way to change the picture is to change
+your own words. Vague writing produces a provisional pencil sketch. Specific,
+revised writing gets inked. Revision stops being homework and becomes the
+game mechanic — the magic pen only answers to the words you actually wrote.
 
 ## What it does
 

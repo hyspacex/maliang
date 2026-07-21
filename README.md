@@ -5,6 +5,12 @@ only by changing their own words. Every renderable detail is bound to an exact
 source span, unspecified details remain provisional, and exact dialogue is
 composed locally.
 
+The name comes from the ancient Chinese story of Ma Liang (马良) and his magic
+pen, which brings whatever he draws to life. GenAI has made that fable real —
+a child's imagination is now the only limit — so Maliang is built to make kids
+dream, express themselves, and practice the one skill that trains imagination
+itself: writing. The child holds the magic pen; their words are the brush.
+
 ## OpenAI Build Week — judge quick start
 
 Maliang was built with Codex and runs on GPT-5.6 at its core: `gpt-5.6-terra`
