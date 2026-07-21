@@ -1,10 +1,16 @@
-# Maliang three-minute demo
+# Maliang demo — voiceover script (silent cut, 2:38)
 
-This script is both the demo-video narration and a reproducible judge path.
-The browser surface uses the deterministic fake provider: local, zero model
-spend, no credentials needed.
+The demo video is silent by design: record the voiceover below over it.
+Each section header gives the on-screen segment and its time range. The
+lines are paced for a comfortable read (~2.3 words per second) — if you
+finish a beat early, just breathe; the next segment holds.
 
-## Prepare
+Every panel image in the video is a real render from Maliang's pipeline
+settings (`gpt-image-2`, low quality, 960×720, the product's exact prompt
+contract), with generation waits cut per production policy: never show
+image generation in real time.
+
+## Reproducible judge path
 
 ```bash
 npm install
@@ -12,83 +18,88 @@ npm test          # 70 tests, 15 files
 npm run dev       # browser surface at http://127.0.0.1:5173, fake provider
 ```
 
-For the full desktop experience (live rendering, persistence, PDF export):
+Full desktop experience (live rendering, persistence, PDF export):
 
 ```bash
 npm run build
 npm run start     # requires Codex CLI signed in + OPENAI_API_KEY in .env
 ```
 
-Production note: never show image generation in real time. Jump-cut from the
-committed sentence directly to the finished redraw (the fake provider is
-instant; for live-render footage, cut the wait and keep the reveal).
+The Moon Door story renders shown in the video are in
+`output/playwright/moon-door/`.
 
-## 0:00–0:30 — The magic pen is real now
+---
 
-Narration:
+## 0:00–0:10 — Title card
 
-> Ma Liang is the boy from an ancient Chinese story. He has a magic pen:
-> whatever he draws comes to life. For generations that was a fable. With
-> Codex and GPT-5.6, it's literally true — AI can bring a child's
-> imagination to life, and the only limit left is imagination itself. But
-> image tools teach kids the wrong lesson: mumble anything, get a
-> masterpiece. Maliang flips it. Here, the picture only changes when your
-> words change — because writing is the skill that trains imagination.
+> Ma Liang is the boy from an ancient Chinese story. His magic pen brings
+> whatever he draws to life.
 
-Show: title card, then the empty six-panel story editor (0:30–0:39).
+## 0:10–0:18 — Empty six-panel editor
 
-## 0:39–1:15 — Words become pictures, honestly
+> With Codex and GPT-5.6, that fable is suddenly real — and the only limit
+> left is a child's imagination.
 
-Narration:
+## 0:18–0:30 — "Mara waits." → all-pencil sketch
 
-> The child writes: "Mara waits." Maliang draws exactly that — and nothing
+> A child writes: "Mara waits." Maliang draws exactly that — and nothing
 > more. Everything the words don't say stays honest, provisional pencil.
+
+## 0:30–0:44 — Revision: the cave and lantern appear, Mara stays blank
+
 > The child revises: "Mara waits in the dark cave, holding her little
 > lantern." The cave appears. The lantern appears. But Mara is still a blank
-> outline — because the child never said what she looks like. One more
-> revision — "a small girl with a messy ponytail" — and Mara becomes real.
-> Every detail is bound to the exact words that earned it.
+> outline — because the child never said what she looks like.
 
-Show: the three revision beats in panel 1 — all-pencil placeholder, the
-faceless cave render, then the fully drawn Mara.
+## 0:44–0:56 — "A small girl with a messy ponytail" → Mara becomes real
 
-## 1:15–1:33 — The writing helper coaches, never writes
+> One more revision — "a small girl with a messy ponytail" — and Mara
+> becomes real. Every detail on the page is earned by the exact words the
+> child wrote.
 
-Narration:
+## 0:56–1:12 — The writing helper: one question, child's consent
 
-> When a picture comes out pencil-heavy, Maliang can ask — with the child's
-> consent — one reviewed question. It never inserts words, never offers
-> replacements, never scores, never blocks finishing. The child revises in
-> their own voice, and resolved diagnostics earn craft cards.
+> When a picture comes out pencil-heavy, Maliang can ask one reviewed
+> question — with the child's consent. It never inserts words, never offers
+> replacements, never scores, and never blocks finishing. The child always
+> decides: keep it, or revise it.
 
-Show: the "ONE QUESTION — YOUR IDEAS" helper panel with KEEP MY WORDS /
-ANOTHER PART choices.
+## 1:12–1:24 — Craft cards deck
 
-## 1:33–2:19 — Built with Codex and GPT-5.6, running on Codex and GPT-5.6
+> Revision earns craft cards — real author tricks like "show, don't tell"
+> and "strong verbs" — unlocked only by evidence that the child's own
+> rewrite fixed the picture.
 
-Narration:
+## 1:24–1:36 — The full story written in the editor
+
+> So the child keeps writing. Six panels, one story — The Moon Door —
+> every sentence in the child's own voice, every panel earned.
+
+## 1:36–1:52 — Pan down the finished comic page
+
+> And this is what revision buys you: a finished comic where every single
+> detail — the moon door, the lantern, the ponytail, the night sky — exists
+> because a child chose the words for it. That's writing training
+> imagination.
+
+## 1:52–2:14 — Built with Codex, running on GPT-5.6
 
 > GPT-5.6 isn't just how we built Maliang — it's the engine inside it.
-> Safety checks, scene extraction with source-span evidence, and render
-> inspection all run GPT-5.6 Terra through sandboxed, ephemeral Codex
-> subprocesses with schema-validated output, while GPT-5.6 Sol orchestrates
-> image generation against a deterministic render contract. We built the
-> core in Codex CLI, steered long runs from Codex Mobile while commuting,
-> and used Sol's ultra mode with subagents to review every major design.
-> Codex also ran our renderer bake-off: a raster image model, constrained
-> vector plans, and the direct Images API — benchmarked head to head. The
+> Safety, scene extraction with source-span evidence, and render inspection
+> run GPT-5.6 Terra through sandboxed, ephemeral Codex subprocesses, while
+> GPT-5.6 Sol orchestrates image generation against a deterministic render
+> contract. We built the core in Codex CLI, steered long runs from Codex
+> Mobile while commuting, and used Sol's ultra mode with subagents to review
+> every major design.
+
+## 2:14–2:26 — Renderer benchmark board
+
+> Codex also ran our renderer bake-off — raster image model, constrained
+> vector plans, and the direct Images API, benchmarked head to head. The
 > data picked the shipped default.
 
-Show: the `codex exec` invocations for both models; the three-renderer
-benchmark board (`output/playwright/comparison/raster-vs-vector-vs-openai-api.png`).
+## 2:26–2:38 — Closing card
 
-## 2:19–2:32 — Why it matters
-
-Narration:
-
-> Revision is the highest-leverage skill in learning to write — and the one
-> kids resist most. Maliang makes revision the reward, and the child is the
-> only author on the page. Maliang — the magic brush that makes you the
-> magician.
-
-Show: closing card with the finished render and repo URL.
+> Writing is the skill that trains imagination — and imagination is the only
+> limit left. Maliang: you already hold the magic pen. Your words are the
+> brush.
